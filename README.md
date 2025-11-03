@@ -1,70 +1,124 @@
-# Getting Started with Create React App
+# Lewis-Tac-Toe / Lewis-Tac-Azure
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Author:** Shiva Lakshmi Renu Yama  
+**Course:** Lewis.Education – Coding Standards Assignment  
+**Project Repository:** [GitHub - renuyama/lewis-tac-toe](https://github.com/renuyama/lewis-tac-toe)
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Project Summary
 
-### `npm start`
+This project demonstrates the development and deployment of a React-based Tic-Tac-Toe game in two phases:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Requirement 1 & 2 – Lewis-Tac-Toe:**  
+   Creating a functional React Tic-Tac-Toe application following the official React tutorial and deploying it manually to Microsoft Azure.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Requirement 3 & 4 – Lewis-Tac-Azure:**  
+   Rebuilding the project using CI/CD practices with GitHub Actions and Azure Static Web Apps for automated deployment and continuous integration.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+- **React (Functional Components & Hooks)** – for UI logic and game management  
+- **JavaScript (ES6+)** – core programming language  
+- **Node.js & npm** – for project setup and local development  
+- **Microsoft Azure Static Web Apps** – for hosting and deployment  
+- **GitHub** – for version control and CI/CD pipeline integration  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Requirements Overview
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### ✅ Requirement 1 – Lewis-Tac-Toe
+- Followed the official React [Tic-Tac-Toe tutorial](https://react.dev/learn/tutorial-tic-tac-toe)
+- Used **functional components** and **React Hooks**
+- Renamed the app to **Lewis-Tac-Toe**
+- Ensured clean, working code that compiles without warnings or errors
 
-### `npm run eject`
+### ✅ Requirement 2 – Azure Hosting
+- Hosted the application using **Microsoft Azure Static Web Apps**
+- Source code managed via **GitHub**
+- Documented deployment progress and challenges
+- Completed within the assigned time frame (3 hours)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### ✅ Requirement 3 – CI/CD Setup
+- Created a new Azure Static Web App connected to GitHub
+- Verified automated workflow file (`.github/workflows/azure-static-web-apps.yml`)
+- Confirmed that code pushes automatically trigger deployments
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### ✅ Requirement 4 – Lewis-Tac-Azure
+- Integrated the Tic-Tac-Toe code into the CI/CD hosted app
+- Renamed project to **Lewis-Tac-Azure**
+- Validated successful builds and deployments automatically via GitHub Actions
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Local Setup Instructions
 
-## Learn More
+### Prerequisites
+- Node.js (v18 or newer)
+- npm (v9 or newer)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/renuyama/lewis-tac-toe
+cd lewis-tac-toe
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Install dependencies
+npm install
 
-### Code Splitting
+# Run locally
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The application will run locally at: **http://localhost:3000**
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Deployment Instructions
 
-### Making a Progressive Web App
+### Manual Hosting (Lewis-Tac-Toe)
+1. Push the repository to GitHub.  
+2. In the Azure Portal, create a Static Web App.  
+   - Framework: React  
+   - App location: `/`  
+   - Output location: `build`  
+3. Azure generates a GitHub Actions workflow to automate builds.  
+4. Once deployed, verify the site using the provided Azure URL.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Automated CI/CD (Lewis-Tac-Azure)
+1. Create a new Azure Static Web App linked directly to the GitHub repo.  
+2. Each new commit to `main` triggers an automated deployment.  
+3. Modify the app to implement the React Tic-Tac-Toe logic.  
+4. Rename app in the UI to “Lewis-Tac-Azure.”  
+5. Confirm deployment success through the Azure dashboard.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Coding Standards Compliance
 
-### Deployment
+- All code compiles and executes without warnings or errors  
+- All non-original content properly credited in this README  
+- ChatGPT use acknowledged for documentation assistance  
+- README includes author details, setup, and licensing  
+- MIT License added for open-source distribution  
+- Tabs used for indentation; lines wrapped at ~100 chars  
+- Variables, functions, and components use descriptive camelCase naming  
+- Code conservatively commented with valuable explanations  
+- Git and GitHub used for version control and CI/CD commits  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## Author’s Reflection
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Working on this project gave me practical exposure to **React**, **Azure hosting**, and **CI/CD automation**.  
+Transitioning from manual deployment to automated workflows helped me understand real-world DevOps processes.  
+I also improved my understanding of clean coding standards, version control, and documentation.
+
+---
+
+## License
+
+This project is licensed under the **MIT License**.
